@@ -14,7 +14,7 @@ const App=()=> {
   const [search, setSearch] = useState("");
 
   useEffect(() => {      
-    fetch("localhost:9292")
+    fetch("http://localhost:9292")
       .then((r) => r.json())
       .then((messages) => setMessages(messages));
   }, []);

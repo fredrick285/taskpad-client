@@ -6,7 +6,7 @@ const EditMessage=({ id, body, onUpdateMessage })=> {
   const handleFormSubmit=(e)=> {
     e.preventDefault();
 
-    fetch(`localhost:9292/tasks${id}`, {
+    fetch(`http://localhost:9292/tasks${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

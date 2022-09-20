@@ -11,7 +11,7 @@ function Message({ message, currentUser, onMessageDelete, onUpdateMessage }) {
   const isCurrentUser = currentUser.username === username;
 
   function handleDeleteClick() {
-    fetch(`localhost:9292/Tasks${id}`, {
+    fetch(`http://localhost:9292/Tasks${id}`, {
       method: "DELETE",
     });
 
